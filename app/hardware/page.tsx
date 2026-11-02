@@ -1,3 +1,4 @@
+import RPos from "@/components/RPos";
 import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
 import { brand } from "@/lib/site";
@@ -8,8 +9,8 @@ import Footer from "@/components/Footer";
 import { CallerId, CashDrawer, KeyboardMouse, PaymentTerminal, PosTerminal, ReceiptPrinter, Scanners } from "@/components/hardware/Devices";
 
 export const metadata: Metadata = {
-  title: `NPOS Hardware | ${brand.name}`,
-  description: `${brand.name} NPOS hardware: all-in-one touchscreen terminals, cash drawers, thermal printers, barcode scanners, payment terminals and more.`,
+  title: `POS Hardware | ${brand.name}`,
+  description: `${brand.name} POS hardware: all-in-one touchscreen terminals, cash drawers, thermal printers, barcode scanners, payment terminals and more.`,
 };
 
 const devices = [
@@ -66,7 +67,7 @@ export default function HardwarePage() {
           <div className="container-x max-w-3xl">
             <h2 className="section-title">{brand.name}</h2>
             <p className="mt-5 leading-relaxed text-gray-600">
-              You need to know your NPOS system won&apos;t let you down. That&apos;s why every piece of {brand.name} hardware is chosen for quality and reliability — and designed to look sleek on your counter, giving your business a premium feel your customers will notice.
+              You need to know your <RPos /> system won&apos;t let you down. That&apos;s why every piece of {brand.name} hardware is chosen for quality and reliability — and designed to look sleek on your counter, giving your business a premium feel your customers will notice.
             </p>
           </div>
         </section>

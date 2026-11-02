@@ -17,7 +17,7 @@ const shopLines: [string, string][] = [["Strawberry Biscuits", "3.50"], ["Large 
 // Screen par dikhne wale tiles/order lines page ke hisaab se badle ja sakte hain
 export default function HeroHardware({ tiles = shopTiles, lines = shopLines, total = "£17.80" }: { tiles?: string[]; lines?: [string, string][]; total?: string }) {
   return (
-    <div role="img" aria-label={`${brand.name} NPOS hardware bundle`} className="relative mx-auto aspect-[4/3] w-full max-w-2xl select-none">
+    <div role="img" aria-label={`${brand.name} POS hardware bundle`} className="relative mx-auto aspect-[4/3] w-full max-w-2xl select-none">
       <div aria-hidden className="absolute inset-0">
         {/* Rear customer display */}
         <div className="absolute left-[37%] top-0 h-[30%] w-[44%] rounded-t-xl bg-gradient-to-b from-gray-800 to-gray-900 shadow-lg" />

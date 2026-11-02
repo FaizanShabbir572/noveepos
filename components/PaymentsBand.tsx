@@ -1,3 +1,4 @@
+import RPos from "./RPos";
 import Link from "next/link";
 import { CreditCard, Nfc, ShieldCheck, Wifi } from "lucide-react";
 import { brand } from "@/lib/site";
@@ -40,7 +41,7 @@ export default function PaymentsBand() {
           <h2 className="section-title">Secure, Integrated Payments</h2>
           <p className="section-sub">Take card payments straight from the till</p>
           <p className="mt-6 leading-relaxed text-gray-600">
-            {brand.name} links your till directly to an integrated card terminal, so the amount is sent automatically — no re-keying, no mistakes and faster queues at the counter. It&apos;s part of our complete <Link href="/restaurants" className="font-semibold text-brand hover:underline">hospitality NPOS</Link> and <Link href="/retail" className="font-semibold text-brand hover:underline">retail NPOS</Link> solutions.
+            {brand.name} links your till directly to an integrated card terminal, so the amount is sent automatically — no re-keying, no mistakes and faster queues at the counter. It&apos;s part of our complete <Link href="/restaurants" className="font-semibold text-brand hover:underline">hospitality <RPos /></Link> and <Link href="/retail" className="font-semibold text-brand hover:underline">retail <RPos /></Link> solutions.
           </p>
           <p className="mt-4 leading-relaxed text-gray-600">
             Got a few tables? Add a wireless terminal and let customers pay where they sit.

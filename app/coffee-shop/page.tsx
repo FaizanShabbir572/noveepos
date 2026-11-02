@@ -12,8 +12,8 @@ import DemoSection from "@/components/DemoSection";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: `Coffee Shop & Café NPOS Software | ${brand.name}`,
-  description: `Café NPOS for coffee shops: quick orders, table plans, order-ahead, integrated payments and live sales reports from ${brand.name}.`,
+  title: `Coffee Shop & Café POS Software | ${brand.name}`,
+  description: `Café POS for coffee shops: quick orders, table plans, order-ahead, integrated payments and live sales reports from ${brand.name}.`,
 };
 
 const coffeeTop: [string, number][] = [["Flat White", 94], ["Oat Latte", 81], ["Cappuccino", 73], ["Almond Croissant", 52]];

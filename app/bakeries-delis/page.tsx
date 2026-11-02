@@ -12,8 +12,8 @@ import DemoSection from "@/components/DemoSection";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: `Bakery & Deli NPOS Software | ${brand.name}`,
-  description: `NPOS for bakeries and delis: fast counter service, online cake orders, integrated payments and live sales reports from ${brand.name}.`,
+  title: `Bakery & Deli POS Software | ${brand.name}`,
+  description: `POS for bakeries and delis: fast counter service, online cake orders, integrated payments and live sales reports from ${brand.name}.`,
 };
 
 const bakeryTop: [string, number][] = [["Butter Croissant", 92], ["Sourdough Loaf", 78], ["Ham & Cheese Baguette", 61], ["Flat White", 54]];

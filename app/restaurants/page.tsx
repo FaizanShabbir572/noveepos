@@ -11,8 +11,8 @@ import DemoSection from "@/components/DemoSection";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: `Restaurant NPOS Software | ${brand.name}`,
-  description: `Restaurant NPOS with kitchen display, table ordering, split bills and custom menus from ${brand.name}.`,
+  title: `Restaurant POS Software | ${brand.name}`,
+  description: `Restaurant POS with kitchen display, table ordering, split bills and custom menus from ${brand.name}.`,
 };
 
 export default function RestaurantsPage() {

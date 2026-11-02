@@ -1,4 +1,5 @@
 "use client";
+import RPos from "./RPos";
 import Link from "next/link";
 import { Twitter, Facebook, Linkedin, Instagram, Pin, Send } from "lucide-react";
 import { brand, footerCols } from "@/lib/site";
@@ -14,7 +15,7 @@ export default function Footer() {
       <div className="container-x grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <Logo light />
-          <p className="mt-4 max-w-sm text-sm">Run your business with {brand.name}&apos;s fast, dependable NPOS systems.</p>
+          <p className="mt-4 max-w-sm text-sm">Run your business with {brand.name}&apos;s fast, dependable <RPos /> systems.</p>
           <p className="mt-6 text-sm font-semibold text-white">Subscribe for Newsletter:</p>
           <form className="mt-3 flex max-w-sm overflow-hidden rounded-full bg-white/10" onSubmit={(e) => { e.preventDefault(); (e.currentTarget.elements[0] as HTMLInputElement).value = ""; alert("Subscribed!"); }}>
             <input required type="email" placeholder="Your email" className="flex-1 bg-transparent px-5 py-3 text-sm text-white outline-none placeholder:text-gray-500" />

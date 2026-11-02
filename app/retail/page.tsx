@@ -10,8 +10,8 @@ import DemoSection from "@/components/DemoSection";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: `Retail NPOS Software | ${brand.name}`,
-  description: `Retail NPOS for shops: fast checkouts, live stock, cloud reports and an online store in one system from ${brand.name}.`,
+  title: `Retail POS Software | ${brand.name}`,
+  description: `Retail POS for shops: fast checkouts, live stock, cloud reports and an online store in one system from ${brand.name}.`,
 };
 
 export default function RetailPage() {

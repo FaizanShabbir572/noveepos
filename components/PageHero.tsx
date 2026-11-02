@@ -1,3 +1,4 @@
+import { rpos } from "./RPos";
 import { CalendarCheck, PhoneCall, Sparkles } from "lucide-react";
 import ModalButton from "./ClientBits";
 import HeroHardware from "./HeroHardware";
@@ -17,9 +18,9 @@ export default function PageHero({ badge, title, text, featuresHref, visual = <H
       <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[2fr_3fr] lg:py-24">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-brand-dark shadow-sm">
-            <Sparkles className="h-4 w-4 text-accent" /> {badge}
+            <Sparkles className="h-4 w-4 text-accent" /> <span>{rpos(badge)}</span>
           </span>
-          <h1 className="mt-5 text-4xl font-extrabold leading-tight text-brand-dark sm:text-5xl">{title}</h1>
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight text-brand-dark sm:text-5xl">{rpos(title)}</h1>
           <p className="mt-5 max-w-xl text-lg text-slate-700">{text}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <ModalButton label="Book a Free Demo" kind="demo" />

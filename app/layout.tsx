@@ -7,8 +7,8 @@ import { ModalProvider } from "@/components/ModalProvider";
 const poppins = Poppins({ subsets: ["latin"], weight: ["300","400","500","600","700","800"], variable: "--font-poppins" });
 
 export const metadata: Metadata = {
-  title: `NPOS System | Smart NPOS Software | ${brand.name}`,
-  description: `Faster checkouts with a modern NPOS system. Pay ${brand.bundlePrice} upfront or ${brand.weeklyPrice}.`,
+  title: `POS System | Smart POS Software | ${brand.name}`,
+  description: `Faster checkouts with a modern POS system. Pay ${brand.bundlePrice} upfront or ${brand.weeklyPrice}.`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

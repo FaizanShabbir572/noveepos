@@ -3,7 +3,7 @@
 // ==========================================
 export const brand = {
   name: "TradeWithRay",
-  tagline: "Smart, fast and reliable NPOS for growing businesses.",
+  tagline: "Smart, fast and reliable POS for growing businesses.",
   phone: "00923235815253",
   email: "hashmifaizan2@gmail.com",
   bundlePrice: "£995",

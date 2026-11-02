@@ -1,3 +1,4 @@
+import RPos from "./RPos";
 import { brand } from "@/lib/site";
 import ModalButton from "./ClientBits";
 import { Snowflake } from "lucide-react";
@@ -24,7 +25,7 @@ export default function AllInOne() {
           <h2 className="section-title">Simple POS, all in one place</h2>
           <p className="section-sub">Seamless integration that makes life easier</p>
           <p className="mt-6 leading-relaxed text-gray-600">
-            {brand.name} brings everything you need into one easy NPOS system so your business runs smoothly. Our experienced team designed it to be intuitive from day one, with modern tools that help improve cash flow and cut running costs.
+            {brand.name} brings everything you need into one easy <RPos /> system so your business runs smoothly. Our experienced team designed it to be intuitive from day one, with modern tools that help improve cash flow and cut running costs.
           </p>
           <p className="mt-4 leading-relaxed text-gray-600">
             Stay a step ahead with an affordable package that combines a custom business website and order management in a single platform — no more jumping between separate logins. Talk to our team about a setup tailored to you.
