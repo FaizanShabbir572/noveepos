@@ -113,7 +113,7 @@ export function Scanners() {
         <rect x="18" y="28" width="16" height="44" rx="4" fill="#ef4444" opacity=".85" />
         <rect x="56" y="96" width="12" height="20" rx="4" fill="#ff7a00" />
         <path d="M0 42 14 50M0 50h14M0 58l14-8" stroke="#ef4444" strokeWidth="2" opacity=".7" />
-        <text x="60" y="56" fill="#d1d5db" fontSize="12" fontWeight="700" fontFamily="inherit">{brand.name.slice(0, -3).toLowerCase()}<tspan fill="#ff7a00">{brand.name.slice(-3).toLowerCase()}</tspan></text>
+        <text x="40" y="56" fill="#d1d5db" fontSize="9.5" fontWeight="700" fontFamily="inherit">{brand.name.slice(0, -3).toLowerCase()}<tspan fontWeight="800">{brand.name.slice(-3).toLowerCase()}</tspan></text>
       </svg>
     </div>
   );

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChevronDown, Menu, X, Phone, Mail } from "lucide-react";
 import { brand, nav } from "@/lib/site";
@@ -27,8 +28,8 @@ export default function Header() {
             <span className="flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" />{brand.email}</span>
           </div>
           <div className="flex items-center gap-5">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#contact" className="hover:text-white">Contact Us</a>
+            <Link href="#about" className="hover:text-white">About</Link>
+            <Link href="#contact" className="hover:text-white">Contact Us</Link>
           </div>
         </div>
       </div>
@@ -36,19 +37,19 @@ export default function Header() {
       {/* Main nav */}
       <div className={`bg-white transition-shadow ${scrolled ? "shadow-md" : "shadow-sm"}`}>
         <div className="container-x flex h-20 items-center justify-between gap-6">
-          <a href="/" aria-label={brand.name}><Logo /></a>
+          <Link href="/" aria-label={brand.name}><Logo /></Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
             {nav.map((item) => (
               <div key={item.label} className="group relative">
-                <a href={item.href} className="flex items-center gap-1 px-4 py-7 text-sm font-semibold uppercase tracking-wide text-ink hover:text-brand">
+                <Link href={item.href} className="flex items-center gap-1 px-4 py-7 text-sm font-semibold uppercase tracking-wide text-ink hover:text-brand">
                   {item.label}
                   {item.children && <ChevronDown className="h-4 w-4 transition group-hover:rotate-180" />}
-                </a>
+                </Link>
                 {item.children && (
                   <div className="invisible absolute left-0 top-full min-w-[220px] translate-y-2 rounded-b-lg border-t-4 border-brand bg-white py-2 opacity-0 shadow-xl transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                     {item.children.map((c) => (
-                      <a key={c.label} href={c.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-brand-light hover:text-brand">{c.label}</a>
+                      <Link key={c.label} href={c.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-brand-light hover:text-brand">{c.label}</Link>
                     ))}
                   </div>
                 )}
@@ -75,9 +76,9 @@ export default function Header() {
             </div>
             {nav.map((item) => (
               <div key={item.label} className="border-b py-3">
-                <a href={item.href} onClick={() => setMobile(false)} className="font-semibold uppercase">{item.label}</a>
+                <Link href={item.href} onClick={() => setMobile(false)} className="font-semibold uppercase">{item.label}</Link>
                 {item.children?.map((c) => (
-                  <a key={c.label} href={c.href} onClick={() => setMobile(false)} className="block py-1.5 pl-4 text-sm text-gray-600">{c.label}</a>
+                  <Link key={c.label} href={c.href} onClick={() => setMobile(false)} className="block py-1.5 pl-4 text-sm text-gray-600">{c.label}</Link>
                 ))}
               </div>
             ))}

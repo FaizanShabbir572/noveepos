@@ -1,5 +1,6 @@
 import { ChefHat, Clock, Utensils } from "lucide-react";
 import { brand } from "@/lib/site";
+import { Mark } from "@/components/HeroHardware";
 
 const tickets = [
   { table: "Table 4", time: "12:41", mins: 14, state: "Late", color: "bg-red-500", items: ["2× Ribeye Steak (MR)", "1× Grilled Salmon", "3× Chips", "Allergy: no nuts"] },
@@ -32,7 +33,7 @@ export default function KitchenDisplay() {
         <div role="img" aria-label={`${brand.name} kitchen display showing live order tickets`} className="rounded-2xl bg-gray-900 p-3 shadow-2xl">
           <div aria-hidden className="rounded-lg bg-gray-800 p-3">
             <div className="mb-3 flex items-center justify-between text-xs text-gray-400">
-              <span className="font-semibold lowercase text-white">{brand.name.slice(0, -3)}<span className="text-accent">{brand.name.slice(-3)}</span> <span className="normal-case text-gray-400">· Kitchen</span></span>
+              <span className="flex items-center gap-1.5 text-white"><Mark /><span className="text-gray-400">· Kitchen</span></span>
               <span>4 open orders · 12:55</span>
             </div>
             <div className="grid grid-cols-2 gap-3 md:grid-cols-4">

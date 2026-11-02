@@ -1,5 +1,6 @@
 import { Boxes, LayoutDashboard, Package, Receipt, Settings, ShoppingBag, TrendingUp, Users } from "lucide-react";
 import { brand } from "@/lib/site";
+import { Mark } from "@/components/HeroHardware";
 
 const nav = [[LayoutDashboard, "Home"], [Receipt, "Sales"], [Boxes, "Stock"], [Users, "Customers"], [Package, "Suppliers"], [Settings, "Settings"]] as const;
 const kpis = [["Today's Sales", "£2,486", "+12%"], ["Transactions", "164", "+8%"], ["Avg Basket", "£15.16", "+3%"], ["Low Stock", "7 items", ""]];
@@ -18,7 +19,7 @@ function Dashboard({ shop, top }: { shop: string; top: Top }) {
       </div>
       <div aria-hidden className="flex">
         <aside className="hidden w-44 shrink-0 bg-ink p-4 text-sm text-gray-400 md:block">
-          <div className="mb-6 font-bold lowercase text-white">{brand.name.slice(0, -3)}<span className="text-accent">{brand.name.slice(-3)}</span></div>
+          <div className="mb-6 text-white"><Mark /></div>
           {nav.map(([I, l], i) => (
             <div key={l} className={`mb-1 flex items-center gap-2 rounded-md px-3 py-2 ${i === 0 ? "bg-brand text-white" : ""}`}><I className="h-4 w-4" />{l}</div>
           ))}

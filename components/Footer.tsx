@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Twitter, Facebook, Linkedin, Instagram, Pin, Send } from "lucide-react";
 import { brand, footerCols } from "@/lib/site";
 import Logo from "./Logo";
@@ -24,7 +25,7 @@ export default function Footer() {
           <div key={col.title}>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">{col.title}</h3>
             <ul className="space-y-2 text-sm">
-              {col.links.map((l) => <li key={l}><a href={pages[l] ?? "#"} className="hover:text-accent">{l}</a></li>)}
+              {col.links.map((l) => <li key={l}><Link href={pages[l] ?? "#"} className="hover:text-accent">{l}</Link></li>)}
             </ul>
           </div>
         ))}
@@ -34,7 +35,7 @@ export default function Footer() {
           <span>© {brand.name} {new Date().getFullYear()}. All Rights Reserved.</span>
           <div className="flex gap-3">
             {icons.map((I, i) => (
-              <a key={names[i]} href="#" aria-label={names[i]} className="grid h-9 w-9 place-items-center rounded-full bg-white/10 transition hover:bg-accent hover:text-white"><I className="h-4 w-4" /></a>
+              <Link key={names[i]} href="#" aria-label={names[i]} className="grid h-9 w-9 place-items-center rounded-full bg-white/10 transition hover:bg-accent hover:text-white"><I className="h-4 w-4" /></Link>
             ))}
           </div>
         </div>

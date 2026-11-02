@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { CreditCard, Nfc, ShieldCheck, Wifi } from "lucide-react";
 import { brand } from "@/lib/site";
+import { Mark } from "@/components/HeroHardware";
 
 const points = [
   [ShieldCheck, "Secure, PCI-compliant card processing"],
@@ -25,7 +27,7 @@ export default function PaymentsBand() {
               ))}
             </div>
             <div className="mt-[8%] text-center text-[clamp(7px,1vw,10px)] font-semibold lowercase text-gray-300">
-              {brand.name.slice(0, -3)}<span className="text-accent">{brand.name.slice(-3)}</span>
+              <Mark />
             </div>
           </div>
           <div aria-hidden className="absolute bottom-[14%] right-[12%] flex h-[22%] w-[34%] rotate-6 flex-col justify-between rounded-xl bg-gradient-to-br from-brand to-brand-dark p-[3%] shadow-xl">
@@ -38,7 +40,7 @@ export default function PaymentsBand() {
           <h2 className="section-title">Secure, Integrated Payments</h2>
           <p className="section-sub">Take card payments straight from the till</p>
           <p className="mt-6 leading-relaxed text-gray-600">
-            {brand.name} links your till directly to an integrated card terminal, so the amount is sent automatically — no re-keying, no mistakes and faster queues at the counter. It&apos;s part of our complete <a href="/restaurants" className="font-semibold text-brand hover:underline">hospitality NPOS</a> and <a href="/retail" className="font-semibold text-brand hover:underline">retail NPOS</a> solutions.
+            {brand.name} links your till directly to an integrated card terminal, so the amount is sent automatically — no re-keying, no mistakes and faster queues at the counter. It&apos;s part of our complete <Link href="/restaurants" className="font-semibold text-brand hover:underline">hospitality NPOS</Link> and <Link href="/retail" className="font-semibold text-brand hover:underline">retail NPOS</Link> solutions.
           </p>
           <p className="mt-4 leading-relaxed text-gray-600">
             Got a few tables? Add a wireless terminal and let customers pay where they sit.

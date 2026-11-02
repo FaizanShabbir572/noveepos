@@ -2,7 +2,7 @@
 //  Apna brand yahan change karein (sirf ye file)
 // ==========================================
 export const brand = {
-  name: "NovaPOS",
+  name: "TradeWithRay",
   tagline: "Smart, fast and reliable NPOS for growing businesses.",
   phone: "00923235815253",
   email: "hashmifaizan2@gmail.com",

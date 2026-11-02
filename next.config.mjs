@@ -1,3 +1,3 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = { basePath: "/pos" };
 export default nextConfig;

@@ -1,10 +1,12 @@
 import { brand } from "@/lib/site";
+import { LogoMark } from "./Logo";
 
 // Banner ke liye CSS se bana poora hardware set (terminal, cash drawer, printer, scanner, card machine)
 export function Mark({ className = "" }: { className?: string }) {
   return (
-    <span className={`font-semibold lowercase tracking-wide ${className}`}>
-      {brand.name.slice(0, -3)}<span className="text-accent">{brand.name.slice(-3)}</span>
+    <span className={`inline-flex items-center gap-[0.35em] whitespace-nowrap font-semibold lowercase ${className}`}>
+      <LogoMark className="h-[1.4em] w-[1.4em] shrink-0" />
+      <span>{brand.name.slice(0, -3)}<span className="font-extrabold">{brand.name.slice(-3)}</span></span>
     </span>
   );
 }
