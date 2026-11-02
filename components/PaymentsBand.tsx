@@ -14,7 +14,7 @@ export default function PaymentsBand() {
     <section className="py-20">
       <div className="container-x grid items-center gap-12 lg:grid-cols-2">
         {/* Card machine illustration */}
-        <div role="img" aria-label={`${brand.name} integrated card terminal`} className="relative mx-auto grid aspect-square w-full max-w-sm place-items-center rounded-3xl bg-gradient-to-b from-[#c6e6f8] to-[#7fb0e2]">
+        <div role="img" aria-label={`${brand.name} integrated card terminal`} className="relative mx-auto grid aspect-square w-full max-w-sm place-items-center rounded-3xl bg-gradient-to-b from-[#dce7f8] to-[#93afdf]">
           <div aria-hidden className="relative w-[46%] -rotate-6 rounded-[1.4rem] bg-gradient-to-b from-gray-700 to-gray-950 p-[5%] shadow-2xl">
             <div className="rounded-md bg-white p-[8%] text-center">
               <div className="text-[clamp(8px,1.2vw,12px)] text-gray-500">Amount due</div>

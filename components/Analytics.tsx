@@ -24,7 +24,7 @@ export default function Analytics() {
             <div className="flex h-48 items-end gap-3">
               {bars.map((h, i) => (
                 <div key={i} className="flex h-full flex-1 flex-col items-center gap-2">
-                  <div className="flex w-full flex-1 items-end"><div className="w-full rounded-t-md bg-gradient-to-t from-brand to-[#4d9bff]" style={{ height: `${h}%` }} /></div>
+                  <div className="flex w-full flex-1 items-end"><div className="w-full rounded-t-md bg-gradient-to-t from-brand to-[#5b8def]" style={{ height: `${h}%` }} /></div>
                   <span className="text-xs text-gray-500">{"MTWTFSS"[i]}</span>
                 </div>
               ))}

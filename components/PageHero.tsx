@@ -12,7 +12,7 @@ export default function PageHero({ badge, title, text, featuresHref, visual = <H
   visual?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#c6e6f8] via-[#a6cdf0] to-[#7fb0e2] text-ink">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#dce7f8] via-[#bccfee] to-[#93afdf] text-ink">
       <SnowBackdrop />
       <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[2fr_3fr] lg:py-24">
         <div>

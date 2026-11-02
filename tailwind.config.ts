@@ -4,9 +4,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: { DEFAULT: "#0b5ed7", dark: "#0a3d8f", light: "#e8f1ff" },
-        accent: { DEFAULT: "#ff7a00", dark: "#e06a00" },
-        ink: "#1c2333",
+        brand: { DEFAULT: "#1747a6", dark: "#0a2a66", light: "#e9eff9" },
+        accent: { DEFAULT: "#2563eb", dark: "#1d4ed8" },
+        ink: "#0b1733",
         navy: "#0a2a66",
       },
       fontFamily: { sans: ["var(--font-poppins)", "system-ui", "sans-serif"] },

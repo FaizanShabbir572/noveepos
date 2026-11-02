@@ -42,10 +42,10 @@ function Dashboard({ shop, top }: { shop: string; top: Top }) {
             <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-3">
               <div className="mb-3 flex items-center gap-2 text-sm font-semibold"><TrendingUp className="h-4 w-4 text-brand" /> Sales today (hourly)</div>
               <svg viewBox="0 0 300 84" className="h-36 w-full" preserveAspectRatio="none">
-                <defs><linearGradient id="dash-area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#0b5ed7" stopOpacity=".3" /><stop offset="1" stopColor="#0b5ed7" stopOpacity="0" /></linearGradient></defs>
-                {[20, 40, 60].map((y) => <line key={y} x1="0" x2="300" y1={y} y2={y} stroke="#eef2f7" />)}
+                <defs><linearGradient id="dash-area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#1747a6" stopOpacity=".3" /><stop offset="1" stopColor="#1747a6" stopOpacity="0" /></linearGradient></defs>
+                {[20, 40, 60].map((y) => <line key={y} x1="0" x2="300" y1={y} y2={y} stroke="#e9eff9" />)}
                 <polygon points={`0,84 ${pts} 300,84`} fill="url(#dash-area)" />
-                <polyline points={pts} fill="none" stroke="#0b5ed7" strokeWidth="2.5" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+                <polyline points={pts} fill="none" stroke="#1747a6" strokeWidth="2.5" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
               </svg>
             </div>
             <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2">

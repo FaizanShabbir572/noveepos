@@ -74,7 +74,7 @@ export default function HardwarePage() {
         {devices.map((d, i) => (
           <section key={d.id} id={d.id} className={`scroll-mt-28 py-16 ${i % 2 === 0 ? "bg-gray-50" : ""}`}>
             <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-              <div className={`relative grid min-h-[300px] place-items-center overflow-hidden rounded-3xl bg-gradient-to-b from-[#c6e6f8] to-[#7fb0e2] p-8 sm:p-12 ${i % 2 ? "lg:order-2" : ""}`}>
+              <div className={`relative grid min-h-[300px] place-items-center overflow-hidden rounded-3xl bg-gradient-to-b from-[#dce7f8] to-[#93afdf] p-8 sm:p-12 ${i % 2 ? "lg:order-2" : ""}`}>
                 <span aria-hidden className="absolute left-[8%] top-[10%] h-6 w-6 rounded-full bg-white/40" />
                 <span aria-hidden className="absolute bottom-[12%] right-[10%] h-9 w-9 rounded-full bg-white/30" />
                 <div role="img" aria-label={`${brand.name} ${d.title}`} className="relative w-full"><div aria-hidden>{d.art}</div></div>

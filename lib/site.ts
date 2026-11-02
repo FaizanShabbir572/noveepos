@@ -61,7 +61,7 @@ export const testimonials = [
   {
     name: "Usman Tariq", business: "Karahi House", role: "Restaurant owner, Lahore", rating: 5,
     title: "No more lost orders on busy nights",
-    text: "On weekends we serve over 300 covers, and paper slips used to go missing between the hall and the kitchen. With NovaPOS every order goes straight to the kitchen screen, and the table plan shows our waiters which tables are free. Bills are ready in seconds and our cooks finally know what to make first.",
+    text: "On weekends we serve over 300 covers, and paper slips used to go missing between the hall and the kitchen. With TradeWithRay every order goes straight to the kitchen screen, and the table plan shows our waiters which tables are free. Bills are ready in seconds and our cooks finally know what to make first.",
   },
   {
     name: "Ayesha Siddiqui", business: "Brew & Bean Café", role: "Café owner, Karachi", rating: 5,
@@ -71,12 +71,12 @@ export const testimonials = [
   {
     name: "Bilal Ahmed", business: "Fresh Mart", role: "Supermarket owner, Islamabad", rating: 5,
     title: "Stock control that actually works",
-    text: "We carry more than 4,000 products, and stock counting used to take a whole weekend. Now NovaPOS updates stock with every sale, warns me before items run out and makes purchase orders easy. Even during load-shedding the till keeps working offline and syncs when the internet is back.",
+    text: "We carry more than 4,000 products, and stock counting used to take a whole weekend. Now TradeWithRay updates stock with every sale, warns me before items run out and makes purchase orders easy. Even during load-shedding the till keeps working offline and syncs when the internet is back.",
   },
   {
     name: "Hina Raza", business: "Sweet Crumbs Bakery", role: "Bakery owner, Rawalpindi", rating: 5,
     title: "Custom cake orders all in one place",
-    text: "Birthday and wedding cake orders used to live in a notebook. Now customers order online or at the counter, the details go straight to our kitchen screen, and we never forget a message on a cake. The NovaPOS team set everything up in a day and support always answers quickly.",
+    text: "Birthday and wedding cake orders used to live in a notebook. Now customers order online or at the counter, the details go straight to our kitchen screen, and we never forget a message on a cake. The TradeWithRay team set everything up in a day and support always answers quickly.",
   },
 ];
 

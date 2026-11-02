@@ -1,5 +1,5 @@
 // Sector pages ke feature cards ke liye apni SVG illustrations (brand colors, koi copied image nahi)
-const B = "#0b5ed7", D = "#0a3d8f", L = "#e8f1ff", A = "#ff7a00", G = "#1c2333";
+const B = "#1747a6", D = "#0a2a66", L = "#e9eff9", A = "#2563eb", G = "#0b1733";
 
 function Overview() {
   return (
@@ -7,7 +7,7 @@ function Overview() {
       <rect x="30" y="14" width="140" height="92" rx="8" fill="#fff" stroke={L} strokeWidth="2" />
       <rect x="40" y="24" width="38" height="16" rx="3" fill={L} />
       <rect x="82" y="24" width="38" height="16" rx="3" fill={L} />
-      <rect x="124" y="24" width="36" height="16" rx="3" fill="#fff4e8" />
+      <rect x="124" y="24" width="36" height="16" rx="3" fill="#dbe7fb" />
       <rect x="44" y="29" width="18" height="3" rx="1.5" fill={B} />
       <rect x="86" y="29" width="22" height="3" rx="1.5" fill={B} />
       <rect x="128" y="29" width="16" height="3" rx="1.5" fill={A} />
@@ -47,7 +47,7 @@ function Offline() {
       <rect x="107" y="62" width="14" height="4" rx="1" fill="#22c55e" />
       <rect x="86" y="74" width="12" height="10" fill="#374151" />
       <rect x="70" y="84" width="44" height="5" rx="2.5" fill="#374151" />
-      <circle cx="150" cy="34" r="20" fill="#fff4e8" />
+      <circle cx="150" cy="34" r="20" fill="#dbe7fb" />
       <path d="M138 32a18 18 0 0 1 24 0M142 37a12 12 0 0 1 16 0M147 42a5 5 0 0 1 6 0" stroke={A} strokeWidth="2.5" fill="none" strokeLinecap="round" />
       <path d="M137 21l26 26" stroke={A} strokeWidth="3" strokeLinecap="round" />
       <circle cx="44" cy="92" r="14" fill={L} />
@@ -129,7 +129,7 @@ function Touch() {
       <rect x="40" y="14" width="120" height="84" rx="8" fill={G} />
       <rect x="46" y="20" width="108" height="72" rx="3" fill="#fff" />
       {[0, 1, 2].map((r) => [0, 1, 2, 3].map((c) => (
-        <rect key={`${r}${c}`} x={51 + c * 18} y={26 + r * 20} width="15" height="16" rx="2.5" fill={r === 1 && c === 2 ? B : [L, "#fff4e8", "#dcfce7", L][c]} />
+        <rect key={`${r}${c}`} x={51 + c * 18} y={26 + r * 20} width="15" height="16" rx="2.5" fill={r === 1 && c === 2 ? B : [L, "#dbe7fb", "#dcfce7", L][c]} />
       )))}
       <rect x="125" y="26" width="24" height="56" rx="2" fill={L} />
       {[0, 1, 2].map((i) => <rect key={i} x="128" y={31 + i * 8} width="18" height="3" rx="1.5" fill={B} opacity={0.7 - i * 0.15} />)}
@@ -209,7 +209,7 @@ function Customers() {
       <path d="M41 58a13 13 0 0 1 26 0" fill={B} />
       <rect x="34" y="72" width="40" height="5" rx="2.5" fill={G} opacity=".7" />
       <rect x="40" y="81" width="28" height="4" rx="2" fill="#d1d5db" />
-      <rect x="40" y="90" width="28" height="8" rx="4" fill="#fff4e8" />
+      <rect x="40" y="90" width="28" height="8" rx="4" fill="#dbe7fb" />
       <path d="M48 94h12" stroke={A} strokeWidth="2" strokeLinecap="round" />
       {[0, 1, 2, 3].map((i) => (
         <g key={i}>

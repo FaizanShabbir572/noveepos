@@ -64,7 +64,7 @@ export function Scanners() {
         <defs><linearGradient id="hand" x1="0" x2="1"><stop offset="0" stopColor="#374151" /><stop offset="1" stopColor="#0b0f19" /></linearGradient></defs>
         <path d="M20 20h80a10 10 0 0 1 10 10v40a10 10 0 0 1-10 10H78l-8 100a12 12 0 0 1-12 10H44a10 10 0 0 1-10-11l10-99H20a10 10 0 0 1-10-10V30a10 10 0 0 1 10-10z" fill="url(#hand)" />
         <rect x="18" y="28" width="16" height="44" rx="4" fill="#ef4444" opacity=".85" />
-        <rect x="56" y="96" width="12" height="20" rx="4" fill="#ff7a00" />
+        <rect x="56" y="96" width="12" height="20" rx="4" fill="#2563eb" />
         <path d="M0 42 14 50M0 50h14M0 58l14-8" stroke="#ef4444" strokeWidth="2" opacity=".7" />
         <text x="40" y="56" fill="#d1d5db" fontSize="9.5" fontWeight="700" fontFamily="inherit">{brand.name.slice(0, -3).toLowerCase()}<tspan fontWeight="800">{brand.name.slice(-3).toLowerCase()}</tspan></text>
       </svg>

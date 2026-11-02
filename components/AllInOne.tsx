@@ -10,7 +10,7 @@ export default function AllInOne() {
         <div className="order-2 lg:order-1">
           <div className="relative">
             <div className="absolute -inset-6 rounded-3xl bg-brand/10" />
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#c6e6f8] via-[#a6cdf0] to-[#7fb0e2] p-6 shadow-xl sm:p-8">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#dce7f8] via-[#bccfee] to-[#93afdf] p-6 shadow-xl sm:p-8">
               <span aria-hidden className="absolute left-[8%] top-[10%] h-6 w-6 rounded-full bg-white/40" />
               <span aria-hidden className="absolute right-[12%] top-[6%] h-8 w-8 rounded-full bg-white/40" />
               <span aria-hidden className="absolute bottom-[12%] left-[40%] h-4 w-4 rounded-full bg-white/40" />
