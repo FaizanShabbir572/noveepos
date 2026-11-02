@@ -1,4 +1,3 @@
-import RPos from "@/components/RPos";
 import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
 import { brand } from "@/lib/site";
@@ -58,7 +57,7 @@ export default function HardwarePage() {
       <main>
         <PageHero
           badge={`${brand.name} hardware range`}
-          title="Enhance Your ROI With Our Highly-Efficient NPOS Hardware"
+          title="Enhance Your ROI With Our Highly-Efficient POS Hardware"
           text="Reliable, stylish hardware that's built to keep up with your busiest days — and make your counter look the part."
           featuresHref="#pos"
         />
@@ -67,7 +66,7 @@ export default function HardwarePage() {
           <div className="container-x max-w-3xl">
             <h2 className="section-title">{brand.name}</h2>
             <p className="mt-5 leading-relaxed text-gray-600">
-              You need to know your <RPos /> system won&apos;t let you down. That&apos;s why every piece of {brand.name} hardware is chosen for quality and reliability — and designed to look sleek on your counter, giving your business a premium feel your customers will notice.
+              You need to know your POS system won&apos;t let you down. That&apos;s why every piece of {brand.name} hardware is chosen for quality and reliability — and designed to look sleek on your counter, giving your business a premium feel your customers will notice.
             </p>
           </div>
         </section>

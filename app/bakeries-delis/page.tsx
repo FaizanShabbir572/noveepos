@@ -24,8 +24,8 @@ export default function BakeriesDelisPage() {
       <Header />
       <main>
         <PageHero
-          badge="NPOS system for bakeries and delis"
-          title="Improve Your Business With Our Bakeries & Delis NPOS Software"
+          badge="POS system for bakeries and delis"
+          title="Improve Your Business With Our Bakeries & Delis POS Software"
           text={`Most bakeries and delis are small, independent and busy from the first loaf. ${brand.name} pairs easy-to-use software with branded hardware — order management, sales reports, offers and promotions, and integrated payments, all in one place.`}
           featuresHref="#bakery-features"
           visual={<BakeryHardware />}

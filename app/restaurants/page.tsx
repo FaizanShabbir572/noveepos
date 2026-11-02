@@ -21,8 +21,8 @@ export default function RestaurantsPage() {
       <Header />
       <main>
         <PageHero
-          badge="The NPOS system for restaurants"
-          title="Streamline Your Business With Our Restaurant NPOS Software"
+          badge="The POS system for restaurants"
+          title="Streamline Your Business With Our Restaurant POS Software"
           text={`Busy service, changing menus and a kitchen that needs every order right first time — ${brand.name} keeps it all in sync, with a flexible menu, your own floor plan, live stock and instant front-to-kitchen communication.`}
           featuresHref="#restaurant-features"
           visual={<RestaurantHardware />}

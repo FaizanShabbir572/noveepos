@@ -1,4 +1,3 @@
-import RPos from "./RPos";
 import { brand, featurePoints } from "@/lib/site";
 import Icon from "./Icon";
 
@@ -8,7 +7,7 @@ export default function Features() {
       <div className="container-x">
         <div className="text-center">
           <h2 className="section-title">{brand.name} Features</h2>
-          <p className="section-sub">Power up your business with a smarter <RPos /> system</p>
+          <p className="section-sub">Power up your business with a smarter POS system</p>
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featurePoints.map((f) => (

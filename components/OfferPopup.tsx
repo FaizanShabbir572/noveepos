@@ -1,5 +1,4 @@
 "use client";
-import RPos, { rpos } from "./RPos";
 import { useEffect, useState } from "react";
 import { X, Check, CheckCircle2, Gift } from "lucide-react";
 import { brand, bundleItems } from "@/lib/site";
@@ -34,13 +33,13 @@ export default function OfferPopup() {
 
         {/* Bundle side */}
         <div className="bg-gradient-to-br from-brand-dark to-brand p-8 text-white">
-          <h2 className="text-2xl font-extrabold">Complete <RPos /> Bundle</h2>
+          <h2 className="text-2xl font-extrabold">Complete POS Bundle</h2>
           <h3 className="mt-1 text-blue-100">With no strings attached</h3>
           <div className="mt-4 inline-block rounded-lg bg-accent px-4 py-2 font-bold">NO MONTHLY FEES · Only {brand.bundlePrice} + VAT</div>
           <div className="my-6 scale-75"><PosMockup /></div>
           <ul className="grid gap-2 text-sm sm:grid-cols-2">
             {bundleItems.map((b) => (
-              <li key={b} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><span>{rpos(b)}</span></li>
+              <li key={b} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />{b}</li>
             ))}
           </ul>
         </div>

@@ -192,7 +192,7 @@ export const socials = ["Twitter", "Facebook", "LinkedIn", "Pinterest", "Instagr
 export const bundleItems = [
   "FREE 15.6\" widescreen customer display",
   "FREE lifetime support",
-  "NPOS terminal",
+  "POS terminal",
   "Thermal printer",
   "Omnidirectional scanner",
   "12 months return-to-base warranty",

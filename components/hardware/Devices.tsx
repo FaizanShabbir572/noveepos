@@ -3,62 +3,15 @@ import { brand } from "@/lib/site";
 import { Mark } from "../HeroHardware";
 import { Terminal } from "../restaurant/RestaurantHardware";
 import { Printer } from "../coffee/CoffeeHardware";
+import SaleScreen from "../SaleScreen";
 
 // Hardware page ke liye har device ki CSS/SVG drawing (koi copied image nahi)
-
-const basket = [["Chicken Pizza", "1", "8.50"], ["Pepperoni Pizza", "1", "7.50"], ["Garlic Bread", "1", "4.00"], ["Coca-Cola 330ml", "2", "4.00"]];
-
-function PaymentScreen() {
-  return (
-    <div className="flex h-full flex-col p-[1.5%] text-[clamp(4px,0.8vw,9px)] leading-tight text-gray-600">
-      <div className="mb-[1%] flex items-center justify-between border-b pb-[1%]">
-        <Mark className="text-[clamp(6px,1.3vw,14px)] text-brand-dark" />
-        <span className="flex gap-[1em]">{["Takeaway", "Dine In", "User", "Change View"].map((t) => <span key={t}>{t}</span>)}</span>
-      </div>
-      <div className="flex min-h-0 flex-1 gap-[1.5%]">
-        <div className="flex w-[14%] flex-col gap-[6%] pt-[1%]">
-          {[["Point Spend", "0.00"], ["Items", "5"], ["Item Discount", "0.00"], ["Basket Discount", "0.00"], ["VAT", "4.00"]].map(([k, v]) => (
-            <div key={k}><div className="font-semibold text-gray-800">{k}</div><div>{v}</div></div>
-          ))}
-        </div>
-        <div className="flex w-[50%] flex-col gap-[2%]">
-          <div className="grid grid-cols-3 font-semibold text-gray-800">
-            <span>Tip<br /><b className="text-[1.3em]">1.00</b></span><span>Amount Due<br /><b className="text-[1.3em]">25.00</b></span><span>Change Due<br /><b className="text-[1.3em]">5.00</b></span>
-          </div>
-          <div className="flex items-center justify-between border-b pb-[1%]"><span className="font-semibold text-gray-800">Amount</span><b className="text-[1.8em] text-ink">£30.00</b></div>
-          <div className="grid flex-1 grid-cols-4 gap-[2%]">
-            {["1", "2", "3", "5", "4", "5", "6", "10", "7", "8", "9", "20", ".", "0", "⌫", "50"].map((k, i) => (
-              <div key={i} className={`grid place-items-center rounded-[2px] text-[1.4em] font-semibold ${i % 4 === 3 ? "border border-gray-300 text-gray-800" : "bg-brand-dark text-white"}`}>{k}</div>
-            ))}
-          </div>
-          <div className="grid grid-cols-4 gap-[2%] font-semibold">
-            {["Tip", "Card", "Cash", "Split"].map((t) => <span key={t} className="rounded-[2px] border border-gray-300 py-[2%] text-center">{t}</span>)}
-          </div>
-        </div>
-        <div className="flex flex-1 flex-col border-l pl-[2%] opacity-80">
-          <div className="mb-[2%] grid grid-cols-[1fr_auto_auto] gap-x-[6%] font-semibold text-gray-800"><span>Item</span><span>Qty</span><span>Total</span></div>
-          {basket.map(([n, q, p]) => (
-            <div key={n} className="grid grid-cols-[1fr_auto_auto] gap-x-[6%] border-b border-dashed py-[2.5%]"><span>{n}</span><span>{q}</span><span>{p}</span></div>
-          ))}
-          <div className="mt-auto grid grid-cols-2 gap-x-[4%] border-t pt-[2%]">
-            <span>Discount <b className="float-right">0.00</b></span><span>VAT <b className="float-right">4.00</b></span>
-            <span>Items <b className="float-right">5</b></span><span className="font-bold text-gray-800">Total <b className="float-right">24.00</b></span>
-          </div>
-          <div className="mt-[3%] flex gap-[3%] font-semibold">
-            <span className="flex-1 rounded-[2px] border border-red-500 text-center text-red-600">Print Bill</span>
-            <span className="flex-1 rounded-[2px] border border-green-600 text-center text-green-700">Charge</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export function PosTerminal() {
   return (
     <div className="relative w-full">
       <div className="absolute left-[10%] top-[-6%] h-[30%] w-[80%] rounded-t-2xl bg-gradient-to-b from-gray-700 to-gray-900" />
-      <div className="relative"><Terminal><PaymentScreen /></Terminal></div>
+      <div className="relative"><Terminal><SaleScreen height={1000} /></Terminal></div>
     </div>
   );
 }

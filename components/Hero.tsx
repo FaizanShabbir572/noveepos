@@ -1,4 +1,3 @@
-import RPos from "./RPos";
 import { ArrowRight, ShoppingBag } from "lucide-react";
 import HeroHardware from "./HeroHardware";
 import SnowBackdrop from "./SnowBackdrop";
@@ -9,9 +8,9 @@ export default function Hero() {
       <SnowBackdrop />
       <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[2fr_3fr] lg:py-24">
         <div>
-          <h1 className="text-4xl font-extrabold leading-tight text-brand-dark sm:text-5xl lg:text-6xl"><RPos /> Specialists</h1>
+          <h1 className="text-4xl font-extrabold leading-tight text-brand-dark sm:text-5xl lg:text-6xl">POS Specialists</h1>
           <p className="mt-5 max-w-xl text-lg text-slate-700 sm:text-xl">
-            <RPos /> systems and order management built around your business — take control of every order with a solution made to fit.
+            POS systems and order management built around your business — take control of every order with a solution made to fit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="#features" className="btn border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white">Learn More <ArrowRight className="h-4 w-4" /></a>

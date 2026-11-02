@@ -1,5 +1,6 @@
 import { brand } from "@/lib/site";
 import { LogoMark } from "./Logo";
+import SaleScreen from "./SaleScreen";
 
 // Banner ke liye CSS se bana poora hardware set (terminal, cash drawer, printer, scanner, card machine)
 export function Mark({ className = "" }: { className?: string }) {
@@ -11,11 +12,8 @@ export function Mark({ className = "" }: { className?: string }) {
   );
 }
 
-const shopTiles = ["Fruits", "Vegetables", "Milk", "Bakery", "Cosmetics", "Snacks", "Soft Drinks", "Meat", "Tea & Coffee", "Kids", "Toys", "Home Care"];
-const shopLines: [string, string][] = [["Strawberry Biscuits", "3.50"], ["Large Pizza", "11.50"], ["Orange Juice", "2.80"]];
 
-// Screen par dikhne wale tiles/order lines page ke hisaab se badle ja sakte hain
-export default function HeroHardware({ tiles = shopTiles, lines = shopLines, total = "£17.80" }: { tiles?: string[]; lines?: [string, string][]; total?: string }) {
+export default function HeroHardware() {
   return (
     <div role="img" aria-label={`${brand.name} POS hardware bundle`} className="relative mx-auto aspect-[4/3] w-full max-w-2xl select-none">
       <div aria-hidden className="absolute inset-0">
@@ -24,31 +22,7 @@ export default function HeroHardware({ tiles = shopTiles, lines = shopLines, tot
 
         {/* Main screen */}
         <div className="absolute left-[31%] top-[6%] z-10 flex h-[50%] w-[56%] flex-col rounded-xl bg-gradient-to-b from-gray-800 to-gray-950 p-[1.5%] shadow-2xl">
-          <div className="flex flex-1 gap-[2%] overflow-hidden rounded-sm bg-white p-[1.5%] text-[clamp(3px,0.75vw,7px)] leading-tight text-gray-600">
-            <div className="flex w-[62%] flex-col gap-[3%]">
-              <div className="flex items-center justify-between border-b pb-[2%]">
-                <Mark className="text-[clamp(4px,1vw,9px)] text-brand-dark" />
-                <span>Home · Orders · Refund</span>
-              </div>
-              <div className="grid flex-1 grid-cols-4 gap-[3%]">
-                {tiles.map((t, i) => (
-                  <div key={t} className={`grid place-items-center rounded-[2px] border text-center font-medium ${i === 1 ? "border-brand-dark bg-brand-dark text-white" : "border-gray-300"}`}>{t}</div>
-                ))}
-              </div>
-            </div>
-            <div className="flex flex-1 flex-col border-l pl-[3%]">
-              <div className="mb-[4%] flex justify-between font-bold text-gray-700"><span>Item</span><span>Total</span></div>
-              {lines.map(([n, p]) => (
-                <div key={n} className="flex justify-between border-b border-dashed py-[3%]"><span>{n}</span><span>{p}</span></div>
-              ))}
-              <div className="mt-auto h-[8%] rounded-[2px] bg-brand-dark" />
-              <div className="flex justify-between py-[3%] font-bold text-gray-800"><span>Total</span><span>{total}</span></div>
-              <div className="flex gap-[4%]">
-                <div className="flex-1 rounded-[2px] border border-red-500 text-center text-red-500">Cancel</div>
-                <div className="flex-1 rounded-[2px] border border-green-600 text-center text-green-600">Order</div>
-              </div>
-            </div>
-          </div>
+          <div className="min-h-0 flex-1 overflow-hidden rounded-sm bg-white"><SaleScreen /></div>
           <div className="grid h-[12%] place-items-center">
             <Mark className="text-[clamp(5px,1.1vw,11px)] text-gray-300" />
           </div>

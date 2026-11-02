@@ -21,7 +21,7 @@ export default function RetailPage() {
       <main>
         <PageHero
           badge="Winter Sale on Retail Bundles"
-          title="Responsive & Cost-Effective Retail NPOS Software"
+          title="Responsive & Cost-Effective Retail POS Software"
           text={`${brand.name} gives shop owners one system for the till, stock and reports — faster checkouts for your customers, lower running costs for you, and every product managed from a single place.`}
           featuresHref="#retail-features"
         />

@@ -24,8 +24,8 @@ export default function CoffeeShopPage() {
       <Header />
       <main>
         <PageHero
-          badge="NPOS system for cafés"
-          title="Improve Your Business With Our Café NPOS Software"
+          badge="POS system for cafés"
+          title="Improve Your Business With Our Café POS Software"
           text={`Most cafés are small, independent and run at full speed every morning. ${brand.name} handles orders, sales reports, offers and integrated payments in one easy point of sale — so you can focus on the coffee, not the admin.`}
           featuresHref="#coffee-features"
           visual={<CoffeeHardware />}
